@@ -3,7 +3,7 @@ import LoadingIndicator from '../components/Loader';
 import axios from 'axios';
 import Image from 'react-graceful-image'
 import { Link } from 'react-router-dom'
-import Login from './Login';
+
 
 const HomePage = () => {
     const [users, setUsers] = useState([]);
@@ -19,7 +19,7 @@ const HomePage = () => {
             .catch(err => {
                 console.log('error', err)
             })
-    }, [])
+    }, [userId.id])
 
     if (isLoading) {
         return <LoadingIndicator width='300px' height='300px' color='silver' />

@@ -21,7 +21,7 @@ const UserImages = () => {
                 .catch(err => {
                     console.log('ERRRORRRAWWWWWRRRR', err)
                 })
-        }, [])
+        }, [userId.id])
 
     // { console.log(userImages) }
 
