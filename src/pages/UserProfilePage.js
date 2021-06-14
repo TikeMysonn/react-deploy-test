@@ -20,7 +20,7 @@ const UserProfilePage = () => {
     return (
         <>
             <h1>Profile Page for User {user.id} : {user.username}
-                <img src={user.profileImage} width='200px' />
+                <img src={user.profileImage} width='200px' alt=''/>
             </h1>
             <UserImages />
         </>
