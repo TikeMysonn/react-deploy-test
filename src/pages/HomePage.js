@@ -19,7 +19,7 @@ const HomePage = () => {
             .catch(err => {
                 console.log('error', err)
             })
-    }, [userId.id])
+    }, [])
 
     if (isLoading) {
         return <LoadingIndicator width='300px' height='300px' color='silver' />
