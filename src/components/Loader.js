@@ -1,10 +1,10 @@
 import React from 'react';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
 
 
 
-const LoadingIndicator = ({ width, height, color })=>{
+
+
+const LoadingIndicator = ({ width, height, color }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
