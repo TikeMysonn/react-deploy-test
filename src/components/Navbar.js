@@ -13,6 +13,7 @@ import {
 import { useHistory } from 'react-router-dom';
 
 
+
 const NavBar = () => {
     
     const [isOpen, setIsOpen] = useState(false);
@@ -28,11 +29,16 @@ const NavBar = () => {
                     <Nav className="mr-auto" navbar>
                         <NavItem>
                             <NavLink onClick={()=>{history.push("/")}}>Home</NavLink>
+                            
                         </NavItem>
+                      
                     </Nav>
+                    
                     <NavbarText>Alone</NavbarText>
                 </Collapse>
+                
             </Navbar>
+            
         </div>
     );
 }

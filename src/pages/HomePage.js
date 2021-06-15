@@ -3,7 +3,7 @@ import LoadingIndicator from '../components/Loader';
 import axios from 'axios';
 import Image from 'react-graceful-image'
 import { Link } from 'react-router-dom'
-
+import Login from './Login';
 
 const HomePage = () => {
     const [users, setUsers] = useState([]);
@@ -26,13 +26,15 @@ const HomePage = () => {
     }
     return (
         <div>
-            <Link to={`/login`}>Login</Link>
+            {/* <Link to={`/login`}>Login</Link> */}
+            <Login />
             {/* <Login /> */}
             <h1>Home Page</h1>
             <ul>
                 {users.map(user => (
                     <li>
                         <Link to={`/profile/${user.id}`}>{user.id}: {user.username}</Link>
+                       
                         <Image src={user.profileImage} style={{ height: '20%', width: '20%' }} />
                     </li>
                 ))}
